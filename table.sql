@@ -20,6 +20,15 @@ create table barang(
 	jumlah int not null
 );
 
+-- NOT NULL TAPI DENGAN DEFAULT NILAI
+--contoh
+create table barang(
+	kode int not null,
+	nama VARCHAR(100) not null,
+	harga int not null default 1000,
+	jumlah int not null default 0,
+	waktu_dibuat TIMESTAMP not null default current_timestamp
+)
 
 -- MELIHAT TABLE
 select * from barang;
