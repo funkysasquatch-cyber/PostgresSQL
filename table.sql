@@ -41,3 +41,6 @@ alter table barang drop column deskripsi;
 
 -- EDIT NAMA COLUM
 alter table barang rename column name to nama;
+
+-- HAPUS ISI TABLE DAN MEMBUAT ULANG DENGAN SAMA (TABLENYA DI BUAT ULANG NAMUN ISINYA DI HAPUS)
+truncate barang;
