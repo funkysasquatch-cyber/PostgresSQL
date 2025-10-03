@@ -47,3 +47,13 @@ truncate barang;
 
 -- HAPUS TABLE
 drop table barang;
+
+--melihat detail table barang
+select 
+    column_name, 
+    data_type, 
+    is_nullable, 
+    column_default
+from information_schema.columns
+where table_name = 'barang';
+
