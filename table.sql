@@ -11,6 +11,16 @@ create table barang(
 	jumlah int
 );
 
+-- NOT NULL (JIKA DI ISI TIDAK BOLEH KOSONG)
+--contoh
+create table barang(
+	kode int not null,
+	nama varchar(100) not null,
+	harga int not null,
+	jumlah int not null
+);
+
+
 -- MELIHAT TABLE
 select * from barang;
 
