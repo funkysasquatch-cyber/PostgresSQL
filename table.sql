@@ -55,5 +55,7 @@ select
     is_nullable, 
     column_default
 from information_schema.columns
-where table_name = 'barang';
+where table_name = 'barang'
+order by ordinal_position;
+
 
