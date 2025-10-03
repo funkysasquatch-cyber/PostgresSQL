@@ -3,7 +3,6 @@ select * from pg_tables where schemaname='public';
 MEMBUAT DATABASE
 create database belajar;
 
-
 MEMBUAT TABLE
 create table barang(
 	kode int,
