@@ -101,4 +101,24 @@ select p.name as produk, s.name as supplier
 from product p
 join supplier s on p.id = s.product_id;
 
+--perbandingan
+select * from product
+where price = 5000;
+
+select * from product
+where price <> 5000;
+
+select * from product
+where quantity > 50;
+
+select * from product
+where price < 1000000;
+
+select * from product
+where quantity >= 10;
+
+select * from product
+where price <= 500000;
+
+
 
