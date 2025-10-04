@@ -26,3 +26,34 @@ select * from product;
 
 select id, name, price, quantity, created_at
 from product;
+
+--pake primarykey 
+create table product (
+    id varchar(10) not null,
+    name varchar(100) not null,
+    description text,
+    price int not null,
+    quantity int not null default 0,
+    created_at timestamp not null default current_timestamp,
+    primary key (id)
+);
+
+--cari sesuatu di table
+select * from product
+where price > 1000000;
+
+select * from product
+where quantity = 0;
+
+select * from product
+where name like '%Laptop%';
+
+select * from product
+where price between 500000 and 2000000;
+
+select * from product
+where id in ('P001', 'P005', 'P010');
+
+select * from product
+where date(created_at) = current_date;
+
