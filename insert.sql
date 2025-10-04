@@ -23,3 +23,6 @@ values
 
 
 select * from product;
+
+select id, name, price, quantity, created_at
+from product;
